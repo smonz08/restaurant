@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Restaurant Assistant</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Welcome to Our Restaurant!</h1>
+
+		<div class="input-section">
+			<label for="customerName">Your Name:</label>
+			<input type="text" id="customerName" placeholder="Enter your name">
+		</div>
+
+		<div class="input-section">
+			<label for="currentDateTime">Select Date and Time:</label>
+			<input type="datetime-local" id="currentDateTime">
+		</div>
+
+		<div class="greeting-section">
+			<p id="greetingMessage" class='special-display'>Hello, Guest!</p>
+		</div>
+
+		<div>
+			<div class="recommendation-section">
+				<h2>Meal Recommendation</h2>
+				<p>We recommend trying our special</p>
+				<p id="mealRecommendation" class='special-display'></p>
+			</div>
+
+			<div class="recommendation-section">
+				<h2>Drink Recommendation</h2>
+				<p>Pair your meal with</p>
+				<p id="drinkRecommendation" class='special-display'></p>
+			</div>
+
+			<div class="recommendation-section">
+				<h2>Dessert Recommendation</h2>
+				<p>Don't forget our famous</p>
+				<p id="dessertRecommendation" class='special-display'></p>
+			</div>
+
+			<div class="recommendation-section" id='friday'>
+				<h2>Friday Evening Special</h2>
+				<p>Join us this Friday evening for</p>
+				<p id="fridaySpecial" class='special-display'></p>
+			</div>
+		</div>
+		<div>
+			<div class="loyalty-section">
+				<label for="visitCount">Number of Visits this Month:</label>
+				<input type="number" id="visitCount" placeholder="Enter your visit count">
+				<p>Loyalty Bonus</p>
+				<p id="loyaltyBonus" class='special-display'></p>
+			</div>
+		</div>
+
+		<script src="handle-restaurant.js"></script>
+</body>
+
+</html>
